@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234     123456789graph TBstart(开始)--&amp;gt;inputA[输入用户名密码]inputA--&amp;gt;opA&amp;#123;数据库查询子类&amp;#125;opA--&amp;gt;conditionA&amp;#123;是否有此用户&amp;#125;conditionA--yes--&amp;gt;condit">
+<meta name="description" content="graph TB start(开始)–&amp;gt;inputA[输入用户名密码] inputA–&amp;gt;opA{数据库查询子类} opA–&amp;gt;conditionA{是否有此用户} conditionA–yes–&amp;gt;conditionB{密码是否正确} conditionA–no–&amp;gt;inputA conditionB–yes–&amp;gt;opB[读入用户信息] conditionB–no–&amp;gt;inputA opB–&amp;gt;en(登录)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="团队成员">
 <meta property="og:url" content="http://yoursite.com/group/index.html">
 <meta property="og:site_name" content="DLUT-iccd">
-<meta property="og:description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234     123456789graph TBstart(开始)--&amp;gt;inputA[输入用户名密码]inputA--&amp;gt;opA&amp;#123;数据库查询子类&amp;#125;opA--&amp;gt;conditionA&amp;#123;是否有此用户&amp;#125;conditionA--yes--&amp;gt;condit">
+<meta property="og:description" content="graph TB start(开始)–&amp;gt;inputA[输入用户名密码] inputA–&amp;gt;opA{数据库查询子类} opA–&amp;gt;conditionA{是否有此用户} conditionA–yes–&amp;gt;conditionB{密码是否正确} conditionA–no–&amp;gt;inputA conditionB–yes–&amp;gt;opB[读入用户信息] conditionB–no–&amp;gt;inputA opB–&amp;gt;en(登录)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T04:59:08.901Z">
+<meta property="og:updated_time" content="2019-10-08T05:45:08.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="团队成员">
-<meta name="twitter:description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234     123456789graph TBstart(开始)--&amp;gt;inputA[输入用户名密码]inputA--&amp;gt;opA&amp;#123;数据库查询子类&amp;#125;opA--&amp;gt;conditionA&amp;#123;是否有此用户&amp;#125;conditionA--yes--&amp;gt;condit">
+<meta name="twitter:description" content="graph TB start(开始)–&amp;gt;inputA[输入用户名密码] inputA–&amp;gt;opA{数据库查询子类} opA–&amp;gt;conditionA{是否有此用户} conditionA–yes–&amp;gt;conditionB{密码是否正确} conditionA–no–&amp;gt;inputA conditionB–yes–&amp;gt;opB[读入用户信息] conditionB–no–&amp;gt;inputA opB–&amp;gt;en(登录)">
 
 
 
@@ -277,49 +277,21 @@
       <div class="post-body">
         
         
-          <table>
-<thead>
-<tr>
-<th>项目</th>
-<th align="right">价格</th>
-<th align="center">数量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>计算机</td>
-<td align="right">$1600</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td>手机</td>
-<td align="right">$12</td>
-<td align="center">12</td>
-</tr>
-<tr>
-<td>管线</td>
-<td align="right">$1</td>
-<td align="center">234</td>
-</tr>
-</tbody></table>
-<div id="flowchart-0" class="flow-chart"></div>
+          <pre class="mermaid">graph TB
+start(开始)–>inputA[输入用户名密码]
+inputA–>opA{数据库查询子类}
+opA–>conditionA{是否有此用户}
+conditionA–yes–>conditionB{密码是否正确}
+conditionA–no–>inputA
+conditionB–yes–>opB[读入用户信息]
+conditionB–no–>inputA
+opB–>en(登录)</pre>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">start(开始)--&gt;inputA[输入用户名密码]</span><br><span class="line">inputA--&gt;opA&#123;数据库查询子类&#125;</span><br><span class="line">opA--&gt;conditionA&#123;是否有此用户&#125;</span><br><span class="line">conditionA--yes--&gt;conditionB&#123;密码是否正确&#125;</span><br><span class="line">conditionA--no--&gt;inputA</span><br><span class="line">conditionB--yes--&gt;opB[读入用户信息]</span><br><span class="line">conditionB--no--&gt;inputA</span><br><span class="line">opB--&gt;en(登录)</span><br></pre></td></tr></table></figure>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: ICCD|past:>http://www.google.com[blank]
-e=>end: End:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something…|request
 
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script>
+
+
+
         
       </div>
       
@@ -458,6 +430,8 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
       mermaid.initialize({theme: 'default'});
     }
   </script>
+
+
 
 
         
