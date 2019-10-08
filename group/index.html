@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="graph TB start(开始)–&amp;gt;inputA[输入用户名密码] inputA–&amp;gt;opA{数据库查询子类} opA–&amp;gt;conditionA{是否有此用户} conditionA–yes–&amp;gt;conditionB{密码是否正确} conditionA–no–&amp;gt;inputA conditionB–yes–&amp;gt;opB[读入用户信息] conditionB–no–&amp;gt;inputA opB–&amp;gt;en(登录)">
+<meta name="description" content="sequenceDiagram participant Client participant Server  Note left of Client:SYN_SENT Client-&amp;gt;Server:SYN=1 seq=x Note right of Server:SYN_RCVD Server-&amp;gt;Client:SYN=1 seq=y ACK=x+1 Note left of Client:ESTA">
 <meta property="og:type" content="website">
 <meta property="og:title" content="团队成员">
 <meta property="og:url" content="http://yoursite.com/group/index.html">
 <meta property="og:site_name" content="DLUT-iccd">
-<meta property="og:description" content="graph TB start(开始)–&amp;gt;inputA[输入用户名密码] inputA–&amp;gt;opA{数据库查询子类} opA–&amp;gt;conditionA{是否有此用户} conditionA–yes–&amp;gt;conditionB{密码是否正确} conditionA–no–&amp;gt;inputA conditionB–yes–&amp;gt;opB[读入用户信息] conditionB–no–&amp;gt;inputA opB–&amp;gt;en(登录)">
+<meta property="og:description" content="sequenceDiagram participant Client participant Server  Note left of Client:SYN_SENT Client-&amp;gt;Server:SYN=1 seq=x Note right of Server:SYN_RCVD Server-&amp;gt;Client:SYN=1 seq=y ACK=x+1 Note left of Client:ESTA">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T05:45:08.346Z">
+<meta property="og:updated_time" content="2019-10-08T06:03:45.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="团队成员">
-<meta name="twitter:description" content="graph TB start(开始)–&amp;gt;inputA[输入用户名密码] inputA–&amp;gt;opA{数据库查询子类} opA–&amp;gt;conditionA{是否有此用户} conditionA–yes–&amp;gt;conditionB{密码是否正确} conditionA–no–&amp;gt;inputA conditionB–yes–&amp;gt;opB[读入用户信息] conditionB–no–&amp;gt;inputA opB–&amp;gt;en(登录)">
+<meta name="twitter:description" content="sequenceDiagram participant Client participant Server  Note left of Client:SYN_SENT Client-&amp;gt;Server:SYN=1 seq=x Note right of Server:SYN_RCVD Server-&amp;gt;Client:SYN=1 seq=y ACK=x+1 Note left of Client:ESTA">
 
 
 
@@ -277,16 +277,35 @@
       <div class="post-body">
         
         
-          <pre class="mermaid">graph TB
-start(开始)–>inputA[输入用户名密码]
-inputA–>opA{数据库查询子类}
-opA–>conditionA{是否有此用户}
-conditionA–yes–>conditionB{密码是否正确}
-conditionA–no–>inputA
-conditionB–yes–>opB[读入用户信息]
-conditionB–no–>inputA
-opB–>en(登录)</pre>
+          <pre class="mermaid">sequenceDiagram
+participant Client
+participant Server
 
+Note left of Client:SYN_SENT
+Client->Server:SYN=1 seq=x
+Note right of Server:SYN_RCVD
+Server->Client:SYN=1 seq=y ACK=x+1
+Note left of Client:ESTABLISHED
+Client->Server:ACK=y+1
+Note right of Server:ESTABLISHED</pre>
+<center>
+<pre class="mermaid">graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]</pre>
+</center>
+
+<pre class="mermaid">graph TB
+start(开始)-->inputA[输入用户名密码]
+inputA-->opA{数据库查询子类}
+opA-->conditionA{是否有此用户}
+conditionA--yes-->conditionB{密码是否正确}
+conditionA--no-->inputA
+conditionB--yes-->opB[读入用户信息]
+conditionB--no-->inputA
+opB-->en(登录)</pre>
 
 
 
