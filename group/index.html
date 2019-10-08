@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234    ` ` `mermaid graph TD;     A--&amp;gt;B;     A--&amp;gt;C;     B--&amp;gt;D;     C--&amp;gt;D; ` ` `   st=&amp;gt;start: ICCD|past:&amp;gt;http://www.google.com[blank] e=&amp;gt;end: End:&amp;gt;http://">
+<meta name="description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234     123456789graph TBstart(开始)--&amp;gt;inputA[输入用户名密码]inputA--&amp;gt;opA&amp;#123;数据库查询子类&amp;#125;opA--&amp;gt;conditionA&amp;#123;是否有此用户&amp;#125;conditionA--yes--&amp;gt;condit">
 <meta property="og:type" content="website">
 <meta property="og:title" content="团队成员">
 <meta property="og:url" content="http://yoursite.com/group/index.html">
 <meta property="og:site_name" content="DLUT-iccd">
-<meta property="og:description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234    ` ` `mermaid graph TD;     A--&amp;gt;B;     A--&amp;gt;C;     B--&amp;gt;D;     C--&amp;gt;D; ` ` `   st=&amp;gt;start: ICCD|past:&amp;gt;http://www.google.com[blank] e=&amp;gt;end: End:&amp;gt;http://">
+<meta property="og:description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234     123456789graph TBstart(开始)--&amp;gt;inputA[输入用户名密码]inputA--&amp;gt;opA&amp;#123;数据库查询子类&amp;#125;opA--&amp;gt;conditionA&amp;#123;是否有此用户&amp;#125;conditionA--yes--&amp;gt;condit">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T04:42:37.972Z">
+<meta property="og:updated_time" content="2019-10-08T04:59:08.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="团队成员">
-<meta name="twitter:description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234    ` ` `mermaid graph TD;     A--&amp;gt;B;     A--&amp;gt;C;     B--&amp;gt;D;     C--&amp;gt;D; ` ` `   st=&amp;gt;start: ICCD|past:&amp;gt;http://www.google.com[blank] e=&amp;gt;end: End:&amp;gt;http://">
+<meta name="twitter:description" content="项目 价格 数量    计算机 $1600 5   手机 $12 12   管线 $1 234     123456789graph TBstart(开始)--&amp;gt;inputA[输入用户名密码]inputA--&amp;gt;opA&amp;#123;数据库查询子类&amp;#125;opA--&amp;gt;conditionA&amp;#123;是否有此用户&amp;#125;conditionA--yes--&amp;gt;condit">
 
 
 
@@ -302,14 +302,8 @@
 </tr>
 </tbody></table>
 <div id="flowchart-0" class="flow-chart"></div>
-` ` `mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-` ` `
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">start(开始)--&gt;inputA[输入用户名密码]</span><br><span class="line">inputA--&gt;opA&#123;数据库查询子类&#125;</span><br><span class="line">opA--&gt;conditionA&#123;是否有此用户&#125;</span><br><span class="line">conditionA--yes--&gt;conditionB&#123;密码是否正确&#125;</span><br><span class="line">conditionA--no--&gt;inputA</span><br><span class="line">conditionB--yes--&gt;opB[读入用户信息]</span><br><span class="line">conditionB--no--&gt;inputA</span><br><span class="line">opB--&gt;en(登录)</span><br></pre></td></tr></table></figure>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: ICCD|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
@@ -458,9 +452,12 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
 
 
 
-
-
-
+  <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'default'});
+    }
+  </script>
 
 
         
